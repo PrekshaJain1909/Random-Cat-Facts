@@ -1,0 +1,36 @@
+*{
+    background-color:rgb(183, 206, 247);
+}
+
+h1{
+    text-align: center;
+}
+button {
+    background-color: white;
+    display: block; /* Or display: inline-block; */
+    margin: 0 auto;
+    height: 30px;
+    width: 120px;
+    border-radius: 10%;
+    opacity: 0.75;
+}
+button:hover{
+    opacity: 1;
+}
+.backg{  
+    margin-left: 20px;
+    padding: 10px;
+    height: 100px;
+    width: 1200px;
+    border-radius: 10px;
+    background-color:rgb(218, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: black; */
+}
+#image {
+    margin-left: 400px;
+    width:500px; /* Ensure the image doesn't exceed the container width */
+    height: 300px;
+}
