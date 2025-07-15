@@ -1,36 +1,69 @@
-*{
-    background-color:rgb(183, 206, 247);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
+body {
+  background: linear-gradient(to right, #fff4e6, #ffe0e0);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
+
+.container {
+  background: #fff;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
 button {
-    background-color: white;
-    display: block; /* Or display: inline-block; */
-    margin: 0 auto;
-    height: 30px;
-    width: 120px;
-    border-radius: 10%;
-    opacity: 0.75;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
 }
-button:hover{
-    opacity: 1;
+
+button:hover {
+  background-color: #e85c50;
 }
-.backg{  
-    margin-left: 20px;
-    padding: 10px;
-    height: 100px;
-    width: 1200px;
-    border-radius: 10px;
-    background-color:rgb(218, 243, 243);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* color: black; */
+
+p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  padding: 0 10px;
 }
-#image {
-    margin-left: 400px;
-    width:500px; /* Ensure the image doesn't exceed the container width */
-    height: 300px;
+
+img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
 }
